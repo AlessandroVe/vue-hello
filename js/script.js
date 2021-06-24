@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
             el:"#app",
             data:{
                 text:'',
+                color:'',
             },
 
         }

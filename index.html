@@ -10,8 +10,13 @@
 </head>
 <body>
     <div id="app">
-        
-        <h1>{{text}}</h1>
+        <form action="">
+            <input v-model="text" placeholder="Come ti chiami?">
+            <input v-model="color" placeholder="rosso, verde o blu?">
+        </form>
+
+        <h1 > Ciao <span :class="color">{{text}}</span>! </h1>
+
     </div>
     
 </body>

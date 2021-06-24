@@ -12,8 +12,13 @@
 <body>
     <div id="app">
         <form action="">
-            <input v-model="text" placeholder="Come ti chiami?">
-            <input v-model="color" placeholder="rosso, verde o blu?">
+            <div>
+                <input v-model="text" placeholder="Come ti chiami?">
+            </div>
+            <br>
+            <div>
+                <input v-model="color" placeholder="rosso, verde o blu?">
+            </div>
         </form>
 
         <h1 > Ciao <span :class="color">{{text}}</span>! </h1>

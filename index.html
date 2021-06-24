@@ -19,9 +19,18 @@
             <div>
                 <input v-model="color" placeholder="rosso, verde o blu?">
             </div>
+            <br>
+            <div>
+                <input v-model="indirizzo" placeholder="carica qui la tua img">
+            </div>
+
+
         </form>
 
         <h1 > Ciao <span :class="color">{{text}}</span>! </h1>
+        <br>
+        <br>
+        <img :src="indirizzo" alt="">
 
     </div>
     

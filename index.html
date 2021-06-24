@@ -13,7 +13,7 @@
     <div id="app">
         <form action="">
             <div>
-                <input v-model="text" placeholder="Come ti chiami?">
+                <input v-model="name" placeholder="Come ti chiami?">
             </div>
             <br>
             <div>
@@ -21,13 +21,13 @@
             </div>
             <br>
             <div>
-                <input v-model="indirizzo" placeholder="carica qui la tua img">
+                <input v-model="indirizzo" placeholder="incolla l'indirizzo di un'img">
             </div>
 
 
         </form>
 
-        <h1 > Ciao <span :class="color">{{text}}</span>! </h1>
+        <h1 > Ciao <span :class="color">{{name}}</span>! </h1>
         <br>
         <br>
         <img :src="indirizzo" alt="">
